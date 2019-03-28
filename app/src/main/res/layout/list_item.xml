@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/itemlayout"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:padding="10dp"
+    android:orientation="vertical">
+
+    <!--<FrameLayout-->
+        <!--android:id="@+id/list_item"-->
+        <!--android:layout_width="199dp"-->
+        <!--android:layout_height="297dp"-->
+        <!--android:layout_gravity="center"-->
+        <!--android:layout_marginTop="19dp">-->
+        <!--课程图-->
+        <ImageView
+            android:id="@+id/ItemImage"
+            android:layout_width="199dp"
+            android:layout_height="297dp"
+            android:layout_gravity="center_horizontal"
+            android:src="@drawable/c_1"
+            android:scaleType="fitXY"/>
+        <!--&lt;!&ndash;背景框&ndash;&gt;-->
+        <!--<ImageView-->
+            <!--android:id="@+id/ItemBgImage"-->
+            <!--android:layout_width="231.5dp"-->
+            <!--android:layout_height="335dp"-->
+            <!--android:layout_gravity="center_horizontal"-->
+            <!--android:src="@drawable/course_bg"-->
+            <!--android:scaleType="centerInside"/>-->
+        <!--<TextView-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_gravity="center"-->
+            <!--android:text="武汉"-->
+            <!--android:textColor="#000000"-->
+            <!--/>-->
+    <!--</FrameLayout>-->
+
+    <!--<TextView-->
+        <!--android:id="@+id/tvCity"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_gravity="center_horizontal"-->
+        <!--android:text="Title"-->
+        <!--android:textColor="#000000" >-->
+    <!--</TextView>-->
+</LinearLayout>

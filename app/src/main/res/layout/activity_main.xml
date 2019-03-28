@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.fgz.activity.MainActivity">
+    <!--状态栏部分-->
+    <include layout="@layout/topbar_layout"></include>
+    <!--切换界面部分-->
+    <FrameLayout
+        android:id="@+id/frag_home"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:layout_gravity="center"></FrameLayout>
+    <!--底部切换栏-->
+    <include layout="@layout/bottombar_layout"></include>
+</LinearLayout>

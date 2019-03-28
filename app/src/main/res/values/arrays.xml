@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="square_type">
+        <item>热榜</item>
+        <item>推荐</item>
+        <item>发现</item>
+        <item>成长</item>
+    </string-array>
+</resources>

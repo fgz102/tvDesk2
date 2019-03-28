@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/MineBottomBarStyle"
+    android:elevation="@dimen/dp_2"
+    android:translationZ="@dimen/dp_3"
+    tools:showIn="@layout/activity_main">
+    <!--按钮-->
+    <RadioGroup
+        android:id="@+id/bottombar"
+        style="@style/MineBottomBarStyle"
+        tools:showIn="@layout/activity_main">
+        <!--学习页面-->
+        <RadioButton
+            android:id="@+id/yg_study"
+            style="@style/MineBottomBarButtonStyle"
+            android:text="学&#8194;习" />
+        <!--才艺页面-->
+        <RadioButton
+            android:id="@+id/yg_talent"
+            style="@style/MineBottomBarButtonStyle"
+            android:text="才&#8194;艺" />
+        <!--娱乐页面-->
+        <RadioButton
+            android:id="@+id/yg_entertainment"
+            style="@style/MineBottomBarButtonStyle"
+            android:text="丫哥乐园" />
+        <!--广场页面-->
+        <RadioButton
+            android:id="@+id/yg_square"
+            style="@style/MineBottomBarButtonStyle"
+            android:text="广&#8194;场" />
+        <!--家长中心页面-->
+        <RadioButton
+            android:id="@+id/yg_setting"
+            style="@style/MineBottomBarButtonStyle"
+            android:text="设&#8194;置" />
+        <!--我的页面-->
+        <RadioButton
+            android:id="@+id/yg_my"
+            style="@style/MineBottomBarButtonStyle"
+            android:text="我&#8194;的" />
+    </RadioGroup>
+    <!-- 遮罩 -->
+    <!--<LinearLayout-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="match_parent">-->
+        <!--<TextView-->
+            <!--android:layout_width="@dimen/dp_0"-->
+            <!--android:layout_height="match_parent"-->
+            <!--android:layout_weight="1" />-->
+        <!--<TextView-->
+            <!--android:layout_width="@dimen/dp_0"-->
+            <!--android:layout_height="match_parent"-->
+            <!--android:layout_weight="1" />-->
+        <!--<TextView-->
+            <!--android:id="@+id/show_count"-->
+            <!--android:layout_width="@dimen/dp_0"-->
+            <!--android:layout_height="match_parent"-->
+            <!--android:layout_weight="1" />-->
+        <!--<TextView-->
+            <!--android:layout_width="@dimen/dp_0"-->
+            <!--android:layout_height="match_parent"-->
+            <!--android:layout_weight="1" />-->
+    <!--</LinearLayout>-->
+</RelativeLayout>

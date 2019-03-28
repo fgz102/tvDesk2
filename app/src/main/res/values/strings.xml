@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">丫哥桌面</string>
+    <string name="yg_study">学习</string>
+    <string name="yg_talent">才艺</string>
+    <string name="yg_know">认知</string>
+    <string name="yg_entertainment">娱乐</string>
+    <string name="yg_square">广场</string>
+    <string name="yg_scenter">家长中心</string>
+    <string name="yg_my">我的</string>
+    <string name="course_grade_1">初级</string>
+    <string name="course_grade_2">中级</string>
+    <string name="course_grade_3">高级</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>
