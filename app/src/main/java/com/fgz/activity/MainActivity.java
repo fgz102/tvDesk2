@@ -26,6 +26,7 @@ import com.fgz.fragment.SquareFragment;
 import com.fgz.fragment.StudyFragment;
 import com.fgz.fragment.TalentFragment;
 import com.fgz.listener.BatteryListener;
+import com.fgz.utils.DensityUtils;
 import com.fgz.utils.NetWorkUtil;
 import com.fgz.utils.TimeUtils;
 
@@ -56,11 +57,14 @@ public class MainActivity extends BaseActivity implements RadioGroup.OnCheckedCh
      */
     @Override
     public void initView() {
+        DensityUtils.init(this);
         radioGroup = (RadioGroup) findViewById(R.id.bottombar);//初始化控件
         fragments = new ArrayList<>();//初始化集合
-//        Float m= DensityUtils.getDpi(this);
-//        Integer d= DensityUtils.getSyWidth(this,"w");
-//        Log.i("宽度",""+d+"密度"+m);
+        Float m= DensityUtils.getDensity();
+        Integer d= DensityUtils.getSysWidth("w");
+        Integer h = DensityUtils.getSysWidth("h");
+        Integer d1=DensityUtils.getDpi();
+        Log.i("fgz","宽度："+d+"密度："+m+"高度："+h+"dpi:"+d1);
         //显示标题
         showTitle();
         //显示时间

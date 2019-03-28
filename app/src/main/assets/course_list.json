@@ -29,6 +29,13 @@
       "parms":"MainActivity",
       "picture":"c_1.png",
       "title":"地理王国"
+    },
+    {
+      "index":"5",
+      "type":"page",
+      "parms":"MainActivity",
+      "picture":"c_2.png",
+      "title":"地理王国"
     }
   ]
 }

@@ -20,6 +20,7 @@ import com.fgz.R;
 import com.fgz.activity.StudyCoursesActivity;
 import com.fgz.entity.CourseItem;
 import com.fgz.fragment.base.BaseFragment;
+import com.fgz.utils.CalDp;
 import com.fgz.utils.DensityUtils;
 import com.fgz.utils.ExchangeBean;
 import com.fgz.utils.LocalJsonResolutionUtils;
@@ -78,18 +79,23 @@ public class StudyFragment extends BaseFragment {
     private void setGridView() {
         //获取像素密度，控件总体长度
         int size = courseList.size();
-        int length = 199;
-        float density = DensityUtils.getDpi(this.getActivity());
-        int gridviewWidth = (int) ((size * (length+90)+90) * density);
-        int itemWidth = (int) (length * density);//列宽(px)
+        //每个列宽（dp）
+        int length = CalDp.toDp(397,DensityUtils.getSysWidth("w"),DensityUtils.getDensity());
+        //屏幕密度
+        float density = DensityUtils.getDensity();
+        //图片间距（px）
+        int space =(int) (CalDp.toDp(178)*density);
+        Log.d("fgz","space"+space);
+        int gridviewWidth = (int) ((size * (length+space)+space) * density);
+        int itemWidth = (int) (length);//列宽(px)
 
         LinearLayout.LayoutParams params = new LinearLayout.LayoutParams(
                 gridviewWidth, LinearLayout.LayoutParams.MATCH_PARENT);
         gridView.setLayoutParams(params); // 设置GirdView布局参数,横向布局的关键
 //        gridView.setVerticalScrollBarEnabled(false);
-        Log.d("fgz","itemWidth:"+itemWidth+"density:"+density);
+        Log.d("fgz","itemWidth:"+itemWidth+"density:"+density+"gridviewWidth:"+gridviewWidth);
         gridView.setColumnWidth(gridView.AUTO_FIT); // 设置列表项宽
-        gridView.setHorizontalSpacing(180); // 设置列表项水平间距
+        gridView.setHorizontalSpacing(space); // 设置列表项水平间距
         gridView.setStretchMode(GridView.STRETCH_COLUMN_WIDTH);
         gridView.setNumColumns(size); // 设置列数量=列表集合数
 
@@ -166,7 +172,12 @@ public class StudyFragment extends BaseFragment {
         }
         Log.d("fgz","course:"+exchangeBean.getData().get(0).picture);
         Log.d("fgz","cityList:"+courseList.size());
-
+        //从内部存储读取json数据文件
+        //if(){
+        //  显示
+        // }else{
+        //  请求服务器，下载数据在显示
+        // }
     }
     /* 读取Assets文件夹中的图片资源
      * @param context

@@ -9,23 +9,30 @@ import android.util.DisplayMetrics;
  * 创建日期： 2019-03-07
  */
 public class DensityUtils {
+    private static DisplayMetrics dm;
+    //初始化，只需调用一次
+    public static void init(Context context)
+    {
+        if(dm==null) {
+            dm = context.getResources().getDisplayMetrics();
+        }
+    }
     /**
      * 获取屏幕像素密度
-     * @param context
      * @return
      */
-    public static float getDpi(Context context) {
-        DisplayMetrics dm = context.getResources().getDisplayMetrics();
+    public static float getDensity() {
         return dm.density;
     }
 
+    public  static int getDpi(){
+        return dm.densityDpi;
+    }
     /**
      * 获取屏幕分辨率
-     * @param context
      * @return
      */
-    public static int getSyWidth(Context context,String type) {
-        DisplayMetrics dm = context.getResources().getDisplayMetrics();
+    public static int getSysWidth(String type) {
         switch (type){
             case "w":return dm.widthPixels;
             case "h":return dm.heightPixels;

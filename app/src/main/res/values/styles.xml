@@ -37,17 +37,17 @@
     </style>
     <!-- 底部选择栏按钮的样式 -->
     <style name="MineBottomBarButtonStyle">
-        <item name="android:layout_width">92dp</item>
-        <item name="android:layout_height">36dp</item>
-        <item name="android:layout_marginLeft">20dp</item>
-        <item name="android:layout_marginRight">20dp</item>
+        <item name="android:layout_width">123dp</item>
+        <item name="android:layout_height">48dp</item>
+        <item name="android:layout_marginLeft">19dp</item>
+        <item name="android:layout_marginRight">19dp</item>
         <item name="android:shadowColor">#bf0c0306</item>
         <item name="android:shadowDx">1</item>
         <item name="android:shadowDy">2</item>
         <item name="android:shadowRadius">4</item>
         <item name="android:button">@null</item>
         <item name="android:gravity">center</item>
-        <item name="android:textSize">19sp</item>
+        <item name="android:textSize">@dimen/sp_25</item>
         <item name="android:background">@drawable/bottombtn</item>
         <item name="android:textColor">@drawable/bottombar_text_selector_color</item>
     </style>
